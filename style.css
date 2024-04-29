@@ -1,6 +1,29 @@
-table{
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: larger;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.table-body{
     background-color: gray;
-    margin: auto;
-    width: 30%;
-    height: 50%;
+    height: 500px;
+    width: 400px;
+    padding: 40px 5px;
+    border-radius: 20px;
+    box-shadow: 0 20px rgb(59, 59, 59);
+}
+
+input{
+    width: 20rem;
+    height: 60px;
+    
 }
