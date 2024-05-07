@@ -11,46 +11,48 @@
       <table>
         <tr>
           <td colspan="4">
-            <input type="text" placeholder="0" />
+            <input type="text" placeholder="0" id="output" readonly />
           </td>
         </tr>
 
         <!--the rest of the body of the calculator-->
         <tr class="second-row">
-          <td><button>7</button></td>
-          <td><button>8</button></td>
-          <td><button>9</button></td>
-          <td><button>&#247;</button></td>
+          <td><button onclick="appendToOutput('7')">7</button></td>
+          <td><button onclick="appendToOutput('8')">8</button></td>
+          <td><button onclick="appendToOutput('9')">9</button></td>
+          <td><button onclick="appendToOutput('/')">&#247;</button></td>
         </tr>
 
         <tr class="third-row">
-          <td><button>4</button></td>
-          <td><button>5</button></td>
-          <td><button>6</button></td>
-          <td><button>&#215;</button></td>
+          <td><button onclick="appendToOutput('4')">4</button></td>
+          <td><button onclick="appendToOutput('5')">5</button></td>
+          <td><button onclick="appendToOutput('6')">6</button></td>
+          <td><button onclick="appendToOutput('*')">&#215;</button></td>
         </tr>
 
         <tr class="fourth-row">
-          <td><button>1</button></td>
-          <td><button>2</button></td>
-          <td><button>3</button></td>
-          <td><button>&#8722;</button></td>
+          <td><button onclick="appendToOutput('1')">1</button></td>
+          <td><button onclick="appendToOutput('2')">2</button></td>
+          <td><button onclick="appendToOutput('3')">3</button></td>
+          <td><button onclick="appendToOutput('-')">&#8722;</button></td>
         </tr>
 
         <tr class="fifth-row">
-          <td><button>0</button></td>
-          <td><button>&#46;</button></td>
-          <td><button>&#43;</button></td>
-          <td><button id="equal-to">&#61;</button></td>
+          <td><button onclick="appendToOutput('0')">0</button></td>
+          <td><button onclick="appendToOutput('.')">&#46;</button></td>
+          <td><button onclick="appendToOutput('+')">&#43;</button></td>
+          <td><button onclick="result()" id="equal-to">&#61;</button></td>
         </tr>
       </table>
     </div>
 
     <p>
       The repo address:
-      <a href="https://github.com/rough-diamond213/calculator"
+      <a href="https://github.com/rough-diamond213/calculator" target="_blank"
         >https://github.com/rough-diamond213/calculator</a
       >
     </p>
+
+    <script src="main.js"></script>
   </body>
 </html>
