@@ -56,6 +56,7 @@ button{
     border: none;
     box-shadow: 3px 5px rgb(197, 200, 202);
     font-size: 50px;
+    cursor: pointer;
 }
 #equal-to{
     background-color: orange;
