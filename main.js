@@ -1,7 +1,7 @@
 //alert("connected");
 //console.log("Hello World")
 
-let output = document.getElementById("output");
+const output = document.getElementById("output");
 
 //document.getElementById("output").value = result;
 
@@ -10,7 +10,15 @@ function appendToOutput(input){
 }
 
 function result(){
-    output.value = eval(output.value);
+
+    try{
+        output.value = eval(output.value);
+    }
+
+    catch{
+        output.value= "Error";
+    }
+    
 
     
 }
