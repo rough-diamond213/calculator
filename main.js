@@ -15,7 +15,7 @@ function result(){
         output.value = eval(output.value);
     }
 
-    catch{
+    catch(error){
         output.value= "Error";
     }
     
